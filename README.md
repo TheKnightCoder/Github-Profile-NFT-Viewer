@@ -13,7 +13,7 @@ sequenceDiagram
   Alice->>Blockchain: Sign/Log in via metamask
   Blockchain -->> Alice: Signature
   Alice ->> AWS Lambda: Sign in with Signature
-  AWS Lambda -->> Alice: Authenticate
+  AWS Lambda -->> Alice: Authenticate with a JWT
 
   Alice->>AWS Lambda: Change/Add the Name/Username
   AWS Lambda->>DynamoDB: Change/Add the Name/Username
