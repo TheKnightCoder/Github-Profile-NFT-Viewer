@@ -8,7 +8,6 @@ sequenceDiagram
   participant Alice
   participant AWS Lambda
   participant DynamoDB
-  participant Blockchain Node
   participant Blockchain
 
   Alice->>Blockchain: Sign/Log in via metamask
@@ -29,6 +28,7 @@ sequenceDiagram
 sequenceDiagram
   participant Alice
   participant AWS Lambda
+  participant DynamoDB
   participant Blockchain Node
 
   Alice->>AWS Lambda: Request Widget HTML via Widget URL
