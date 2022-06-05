@@ -1,19 +1,25 @@
 {
-  "name": "github-profile-nft-viewer",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "Github-Profile-NFT-Viewer",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "sst start",
+    "build": "sst build",
+    "deploy": "sst deploy",
+    "remove": "sst remove",
+    "console": "sst console",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TheKnightCoder/Github-Profile-NFT-Viewer.git"
+  "devDependencies": {
+    "@serverless-stack/cli": "^1.2.15",
+    "@serverless-stack/resources": "^1.2.15",
+    "@tsconfig/node16": "^1.0.2",
+    "create-react-app": "^5.0.1",
+    "typescript": "^4.7.3",
+    "vitest": "^0.13.1"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TheKnightCoder/Github-Profile-NFT-Viewer/issues"
-  },
-  "homepage": "https://github.com/TheKnightCoder/Github-Profile-NFT-Viewer#readme"
+  "workspaces": [
+    "backend"
+  ]
 }
